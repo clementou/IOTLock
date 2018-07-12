@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.textView);
 
         lockSwitch.setClickable(true);
+        lockSwitch.setChecked(true);
 
         FingerprintManager fingerprintManager = (FingerprintManager)
                 getSystemService(FINGERPRINT_SERVICE);
