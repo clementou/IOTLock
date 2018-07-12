@@ -12,8 +12,10 @@
         android:id="@+id/lockSwitch"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
         android:layout_marginEnd="18dp"
         android:layout_marginStart="18dp"
+        android:layout_marginTop="292dp"
         android:checked="false"
         android:fontFamily="@font/roboto_black"
         android:textAllCaps="false"
@@ -21,18 +23,19 @@
         android:textOn="@string/locked"
         android:textSize="30sp"
         android:typeface="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:checked="false" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="306dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginBottom="364dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/authenticate_to_use_lock"
         android:textAllCaps="true"
@@ -41,7 +44,20 @@
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="308dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lockSwitch"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/whitefingerprint" />
+
 </android.support.constraint.ConstraintLayout>
