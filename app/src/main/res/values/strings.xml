@@ -17,4 +17,23 @@
     <string name="authenticate_to_use_lock">Authenticate to Use Lock</string>
     <string name="locked">Locked</string>
     <string name="unlocked">Unlocked</string>
+    <string name="purchase" />
+    <string name="purchase_not_invalidated" />
+    <string name="purchase_button_not_invalidated_description" />
+    <string name="purchase_done" />
+    <string name="password_description" />
+    <string name="new_fingerprint_enrolled_description" />
+    <string name="password" />
+    <string name="use_fingerprint_in_future" />
+    <string name="fingerprint_description" />
+    <string name="description_fingerprint_icon" />
+    <string name="fingerprint_hint" />
+    <string name="sign_in" />
+    <string name="cancel" />
+    <string name="use_password" />
+    <string name="ok" />
+    <string name="use_fingerprint_to_authenticate_key" />
+    <string name="fingerprint_not_recognized" />
+    <string name="fingerprint_success" />
+    <string name="authenticate_success">Lock can now be used</string>
 </resources>

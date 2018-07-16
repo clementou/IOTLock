@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_settings" type="id" />
+    <item name="confirmation_message" type="id" />
+    <item name="encrypted_message" type="id" />
+</resources>

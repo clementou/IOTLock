@@ -23,7 +23,6 @@
         android:textOn="@string/locked"
         android:textSize="30sp"
         android:typeface="normal"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,33 +30,37 @@
         app:layout_constraintVertical_bias="0.0"
         tools:checked="false" />
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/authenticate_button"
+        style="@android:style/Widget.Material.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="364dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="21dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/authenticate_to_use_lock"
-        android:textAllCaps="true"
         android:textColor="@color/colorText"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:typeface="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lockSwitch"
+        tools:text="Authenticate to Use Lock" />
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <Button
+        android:id="@+id/authenticate_button_not_invalidated"
+        style="@android:style/Widget.Material.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="308dp"
-        android:layout_marginTop="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_gravity="end"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/authenticate_to_use_lock"
+        android:textColor="?android:attr/textColorPrimaryInverse"
+        android:textSize="16sp"
+        android:typeface="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/whitefingerprint" />
+        app:layout_constraintTop_toBottomOf="@+id/lockSwitch" />
 
 </android.support.constraint.ConstraintLayout>
