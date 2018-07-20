@@ -6,7 +6,7 @@ public class CloseTask extends AsyncTask <Void, Void, Void> {
     protected Void doInBackground(Void... command){
         System.out.println("closed");
         String user = "pi";
-        String host = "10.244.0.151";
+        String host = "192.168.43.127";
         String password = "raspberry";
         String knownHosts = "android_asset/known_hosts";
         SSHManager sshManager = new SSHManager(user, password, host, knownHosts);
